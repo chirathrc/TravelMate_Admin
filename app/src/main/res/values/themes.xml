@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TravelMateAdmin" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/green01</item>
+    </style>
+
+    <style name="Theme.TravelMateAdmin" parent="Base.Theme.TravelMateAdmin" />
+
+    <style name="Theme.TravelMateAdmin.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TravelMateAdmin.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TravelMateAdmin.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

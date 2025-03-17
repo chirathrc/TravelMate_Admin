@@ -1,0 +1,112 @@
+<resources>
+    <!--    <string name="app_name">TravelMate Admin</string>-->
+    <string name="app_name">TravelMate Admin</string>
+    <string name="url">https://b7a0-2402-d000-8130-741a-d9f2-b27-d617-f5ac.ngrok-free.app</string>
+
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="password">Password</string>
+    <string name="position">Position</string>
+    <string name="email">Email</string>
+    <string name="update">Update</string>
+
+
+    //sign in
+    <string name="txt05">Admin Sign In</string>
+    <string name="txt06">Forgot Your Password</string>
+    <string name="txt07">Back to SignIn</string>
+    <string name="txt08">OTP</string>
+    <string name="txt09">Submit</string>
+    <string name="txt10">Admin Verification</string>
+    <string name="txt11">Enter code in your Email.</string>
+    <string name="fp">Forgot my password</string>
+
+    <string name="txtReg01">Seller Register</string>
+
+    <string name="txtReg02">Seller Name</string>
+    <string name="txtReg03">Seller Email</string>
+    <string name="txtReg04">Seller Mobile</string>
+    <string name="txtReg05">Seller Password</string>
+    <string name="txtReg06">Register</string>
+
+    //Home01
+    <string name="txt12">Search Package.</string>
+
+    Home02
+    <string name="txt13">Add New Package</string>
+    <string name="txt14">Are you need help ?</string>
+    <string name="txt15">Need Assistance?</string>
+    <string name="txt16">If you need help with adding a new package, tap the button below.</string>
+    <string name="txt17">Get Help</string>
+    <string name="txt18">Tap to upload image</string>
+    <string name="txtMenuAddPackName">Package Name</string>
+    <string name="txtMenuAddPackCity">Main City</string>
+    <string name="txtMenuAddPackPrice">Price Per Person (USD)</string>
+    <string name="txtMenuAddPackDesc1">Place Description 1</string>
+    <string name="txtMenuAddPackDesc2">Place Description 2</string>
+    <string name="txtMenuAddPackNights">Nights</string>
+    <string name="txtMenuAddPackDays">Days</string>
+    <string name="txtMenuAddPackWiki">Wikipedia URL</string>
+
+    //Update Product
+    <string name="txtUpdate1">Status</string>
+
+
+    <string name="title_activity_admin_home">AdminHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="booking">Bookings</string>
+
+    //other
+    <string name="package_price">Price: %1$s %2$s</string>
+
+    <string name="otTxt01">$</string>
+    <string name="otTxt02">  P/P</string>
+    <string name="otTxt03">Package ID :</string>
+    <string name="otTxt04">Check-in: </string>
+    <string name="otTxt05">Check-out: </string>
+    <string name="otTxt06">Persons</string>
+    <string name="otTxt07">Days</string>
+    <string name="otTxt08">Nights</string>
+    <string name="otTxt09">Order ID :</string>
+
+    <string name="otTxt10">Active</string>
+    <string name="otTxt11">Inactive</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Admin Fragment
+    <string name="adFrag01">New Admin</string>
+    <string name="adFrag02">Admin Management</string>
+    <string name="adFrag03">Register Admin</string>
+    <string name="adFrag04">Manage Admins</string>
+    <string name="adFrag05">Manage Users</string>
+    <string name="adFrag06">Statics</string>
+    <string name="txtChart">User Stats</string>
+    <string name="txtChart2">Income Stats</string>
+
+    <string name="adFrag07">User/ Admin Management</string>
+
+    <string-array name="position_array">
+        <item>Position</item>
+        <item>Manager</item>
+        <item>Employee</item>
+    </string-array>
+
+    <string name="adminPro1">Profile</string>
+    <string name="txtMenuAddPacKMap">Map</string>
+    <string name="update_package">Update Package</string>
+
+
+</resources>

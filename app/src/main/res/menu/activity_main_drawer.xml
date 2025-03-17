@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/baseline_add_business_24"
+            android:title="@string/txt13" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/purchase_order"
+            android:title="@string/booking" />
+
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/add_admin"
+            android:title="@string/adFrag07" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/admin"
+            android:title="@string/adminPro1" />
+    </group>
+</menu>

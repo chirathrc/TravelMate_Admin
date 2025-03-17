@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertNewAdminActivity"
+    android:background="@drawable/gradient_background_two"
+    android:foregroundTint="@color/black">
+
+    <!-- Card for Add New Admin Section -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/admin_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_marginTop="105dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- ScrollView for handling overflow content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- Add New Admin Title -->
+                <TextView
+                    android:id="@+id/add_admin_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Add New Admin"
+                    android:textColor="@color/green_700"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <!-- Name Input with Icon -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/name_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:boxBackgroundColor="@android:color/white"
+                    app:boxStrokeColor="@color/green_700"
+                    app:hintTextColor="@color/green_500"
+                    app:startIconDrawable="@drawable/user_ic"
+                    app:startIconTint="@color/green_700">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/name_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:hint="Enter Name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Email Input with Icon -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:boxBackgroundColor="@android:color/white"
+                    app:boxStrokeColor="@color/green_700"
+                    app:hintTextColor="@color/green_500"
+                    app:startIconDrawable="@drawable/email"
+                    app:startIconTint="@color/green_700">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:hint="Enter Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Mobile Input with Icon -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mobile_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:boxBackgroundColor="@android:color/white"
+                    app:boxStrokeColor="@color/green_700"
+                    app:hintTextColor="@color/green_500"
+                    app:startIconDrawable="@drawable/smartphone"
+                    app:startIconTint="@color/green_700">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/mobile_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:hint="Enter Mobile"
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Position Spinner with Icon -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/position_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:boxBackgroundColor="@android:color/white"
+                    app:boxStrokeColor="@color/green_700"
+                    app:hintTextColor="@color/black"
+                    app:startIconContentDescription="Position Icon"
+                    app:startIconTint="@color/green_700">
+
+                    <android.widget.Spinner
+                        android:id="@+id/position_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:entries="@array/position_array"
+                        android:foregroundTint="@color/black"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- NIC Input with Icon -->
+
+                <!--                &lt;!&ndash; Password Input with Icon &ndash;&gt;-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/password_input_layout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    app:boxBackgroundColor="@android:color/white"-->
+<!--                    app:boxStrokeColor="@color/green_700"-->
+<!--                    app:hintTextColor="@color/green_500"-->
+<!--                    app:startIconDrawable="@drawable/user_ic"-->
+<!--                    app:startIconTint="@color/green_700">-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/password_input"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Enter Password"-->
+<!--                        android:inputType="textPassword"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textColorHint="@color/black"-->
+<!--                        android:textSize="16sp" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/green_700"
+                    android:elevation="8dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="Save Admin"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

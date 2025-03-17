@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="lk.codebridge.travelmateadmin.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="lk.codebridge.travelmateadmin.ui.gallery.GalleryFragment"
+        android:label="@string/txt13"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="lk.codebridge.travelmateadmin.ui.slideshow.SlideshowFragment"
+        android:label="@string/booking"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_admin"
+        android:name="lk.codebridge.travelmateadmin.ui.admin.NewAdminFragment"
+        android:label="@string/adFrag07"
+        tools:layout="@layout/fragment_new_admin" />
+
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="lk.codebridge.travelmateadmin.ui.profile.AdminProfileFragment"
+        android:label="@string/adminPro1"
+        tools:layout="@layout/fragment_new_admin" />
+</navigation>
